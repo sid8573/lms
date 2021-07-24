@@ -1,0 +1,127 @@
+{
+  "project_info": {
+    "project_number": "959921265248",
+    "firebase_url": "https://learning-management-syst-caf71-default-rtdb.firebaseio.com",
+    "project_id": "learning-management-syst-caf71",
+    "storage_bucket": "learning-management-syst-caf71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959921265248:android:b33cea0f3645934186c105",
+        "android_client_info": {
+          "package_name": "com.crayonco.crayon_co_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959921265248-d7h4ba9pdk03n3qnsuq6u6q4nlb86tpv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.crayonco.crayon_co_android",
+            "certificate_hash": "d2ee33eda6c2b321af7fd2a33534b4797fe740bc"
+          }
+        },
+        {
+          "client_id": "959921265248-tpo6eo4pjv0gn6uba340uqqs802tqlt2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6oo2Tt9brmy14e4F1Z2lCYafupVYqZ7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959921265248-tpo6eo4pjv0gn6uba340uqqs802tqlt2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "959921265248-8hpmcfsvqdtahg2o5tp1fv59b5ousrrk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.crayonco.learningmanagementsystem"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959921265248:android:03c8f3c3540d1c6e86c105",
+        "android_client_info": {
+          "package_name": "com.example.learning_management_system"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959921265248-tpo6eo4pjv0gn6uba340uqqs802tqlt2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6oo2Tt9brmy14e4F1Z2lCYafupVYqZ7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959921265248-tpo6eo4pjv0gn6uba340uqqs802tqlt2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "959921265248-8hpmcfsvqdtahg2o5tp1fv59b5ousrrk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.crayonco.learningmanagementsystem"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959921265248:android:b835b9ac7cdb9dce86c105",
+        "android_client_info": {
+          "package_name": "com.example.lms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959921265248-tpo6eo4pjv0gn6uba340uqqs802tqlt2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6oo2Tt9brmy14e4F1Z2lCYafupVYqZ7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959921265248-tpo6eo4pjv0gn6uba340uqqs802tqlt2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "959921265248-8hpmcfsvqdtahg2o5tp1fv59b5ousrrk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.crayonco.learningmanagementsystem"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
