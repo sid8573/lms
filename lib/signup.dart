@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:lms/login.dart';
 //ignore: import_of_legacy_library_into_null_safe
 import 'package:firebase_auth/firebase_auth.dart';
-
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'home.dart';
 
@@ -18,6 +19,9 @@ class signupScreen extends StatefulWidget {
 class _signupScreenState extends State<signupScreen> {
   final mycontroller1 = TextEditingController();
   final mycontroller2 = TextEditingController();
+   final String toEmail = "support@crayonandco.com";
+   final String subject = "Help";
+   final String body = "Name: \nIssue you faced: ";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -65,28 +69,57 @@ class _signupScreenState extends State<signupScreen> {
                         email: mycontroller1.text.trim(),
                         password: mycontroller2.text.trim());
 
+                         mycontroller1.text = "";
+                         mycontroller2.text = "";
+
+
+
                     Navigator.pushAndRemoveUntil(
                       context,
                       MaterialPageRoute(builder: (context) => Home()),
                       ModalRoute.withName('/')
                     );
                   } catch (e) {
-                    print(e);
+                     Fluttertoast.showToast(
+                        msg:"error",
+                        toastLength: Toast.LENGTH_SHORT,
+                        gravity: ToastGravity.TOP,
+                        timeInSecForIosWeb: 1,
+                        backgroundColor: Colors.redAccent,
+                        textColor: Colors.white,
+                        fontSize: 16.0);
                   }
                 },
                 child: Text("SignUp"),
               ),
             ),
-            InkWell(
-              onTap: () {
-                Navigator.pushAndRemoveUntil(
-                      context,
-                      MaterialPageRoute(builder: (context) => LoginScreen()),
-                      (Route<dynamic> route)=> false,
-                    );
-              },
-              child: Text("Already have account? signIn"),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: InkWell(
+                onTap: () {
+                  Navigator.pushAndRemoveUntil(
+                        context,
+                        MaterialPageRoute(builder: (context) => LoginScreen()),
+                        (Route<dynamic> route)=> false,
+                      );
+                },
+                child: Text("Already have account? signIn"),
+              ),
             ),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: InkWell(
+                onTap: () async {
+                  final url =
+                      'mailto:$toEmail?subject=${Uri.encodeFull(subject)}&body=${Uri.encodeFull(body)}';
+
+                  if (await canLaunch(url)) {
+                    await launch(url);
+                  }
+                },
+                child: Text("Contact Us"),
+              ),
+            )
           ],
         ),
       ),
